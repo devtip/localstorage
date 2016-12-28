@@ -11,14 +11,14 @@
 
 ## 使用方法
 
-### 设置本地存储项目
+### 设置项目
 
 ``` javascript
 //保存单个对象
 ClientStorage.set({
 		key : "username",
 		value : "baiduie",
-		expires : 3600 *  1000
+		expires : 3600 * 1000
 });
 
 //保存多个对象
@@ -33,7 +33,7 @@ ClientStorage.set([{
 }]);
 ```
 
-### 获取本地存储项目
+### 获取项目
 
 ``` javascript
 //获取某一个本地存储，返回值为：{key:"",value:"",expires:""}，未取到值时返回值为：null
@@ -81,8 +81,14 @@ ClientStorage.getAllkeys();
 
 
 ## 版本日志
-2016-12-18
-	1. 第1版
-	2. 支持UMD模式
+
+### 2016-12-18
+- 1. 第1版
+- 2. 支持UMD模式
+
+
+### 问题反馈
+如果你有什么问题，请开一个issues
+
 
 
