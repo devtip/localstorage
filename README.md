@@ -11,29 +11,29 @@
 
 ## 使用方法
 
-### 设置项目
+### 设置本地存储项目
 
 ``` javascript
 //保存单个对象
 ClientStorage.set({
-		key : "username",
-		value : "baiduie",
-		expires : 3600 * 1000
+	key : "username",
+	value : "baiduie",
+	expires : 3600 * 1000
 });
 
 //保存多个对象
 ClientStorage.set([{
-		key : "username",
-		value : "baiduie",
-		expires : 3600 * 1000
+	key : "username",
+	value : "baiduie",
+	expires : 3600 * 1000
 },{
-		key : "password",
-		value : "zxlie",
-		expires : 3600 * 1000
+	key : "password",
+	value : "zxlie",
+	expires : 3600 * 1000
 }]);
 ```
 
-### 获取项目
+### 获取本地存储项目
 
 ``` javascript
 //获取某一个本地存储，返回值为：{key:"",value:"",expires:""}，未取到值时返回值为：null
@@ -53,7 +53,7 @@ ClientStorage.get([{
 ```
 
 
-## 删除项目
+## 删除本地存储项目
 
 ``` javascript
 //删除一个本地存储项
@@ -61,7 +61,7 @@ ClientStorage.remove({
 	key : "username"
 });
 
-//删除多个本地存储项目 *
+//删除多个本地存储项
 ClientStorage.remove([{
 	key : "username"
 },{
@@ -72,12 +72,19 @@ ClientStorage.remove([{
 ```
 
 
+## 获取所有的本地存储项目
+
+``` javascript
+ClientStorage.clearAll();
+```
+
 
 ## 获取所有的键
 
 ``` javascript
 ClientStorage.getAllkeys();
 ```
+
 
 
 ## 版本日志
