@@ -1,0 +1,10 @@
+{
+  "name": "跨浏览器本地存储库",
+  "version": "1.0.0",
+  "scripts": {
+  	"build": "uglifyjs ./src/localstorage.js -c -m -o ./dist/localstorage.min.js"
+  },
+  "dependencies": {
+    "uglify-js": "^2.7.5"
+  }
+}

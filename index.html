@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Storage test</title>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+</head>
+<body>
+	<div id="target">Hello</div>
+	<script src="src/localstorage.js"></script>
+	<script>
+	ClientStorage.set({
+		key   :  'name',
+		value:  'codemarker'
+	});
+	var target = document.getElementById('target');
+	target.innerHTML = 'Support localstorage: ' + !!window.localStorage + ',' + ClientStorage.get({
+		key: 'name'
+	});
+	</script>
+	
+	<script id="__bs_script__">//<![CDATA[
+	if(location.hostname === 'localhost') {
+	    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.5'><\/script>".replace("HOST", location.hostname));
+	}
+	//]]></script>
+</body>
+</html>
