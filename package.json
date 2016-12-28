@@ -1,5 +1,5 @@
 {
-  "name": "跨浏览器本地存储库",
+  "name": "cross-browser-localstroage",
   "version": "1.0.0",
   "scripts": {
   	"build": "uglifyjs ./src/localstorage.js -c -m -o ./dist/localstorage.min.js"
